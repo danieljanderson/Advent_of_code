@@ -27,9 +27,11 @@ function getDiff(numberArray){
 //console.log(typeof numberArray)
 //console.log("this is the type of variable you have in the function getDiff function")
 //console.log(numberArray[0])
+console.log(numberArray)
   var diff = 0
   var min = numberArray[0]
   var max = numberArray[0]
+  console.log(min,max)
  //console.log(numberArray[0]+1)
   for (var i=0;i<=numberArray.length-1;i++){
     if(numberArray[i]<min){
@@ -39,8 +41,10 @@ function getDiff(numberArray){
       max=numberArray[i]
     }
   }
+  console.log("the max is"+max)
+  console.log("the min is"+min)
   diff= max - min
-  //console.log(diff)
+  console.log(diff)
 
   return diff
 }
@@ -49,7 +53,7 @@ console.log("this is the type of variable you have in the function getTotal",typ
 var diff = 0
   var sum = 0
   for (var i = 0; i<=numberArray.length-1;i++){
-   diff = getDiff(numberArray[0])
+   diff = getDiff(numberArray[i])
    sum=sum+diff
    console.log(sum)
   }
