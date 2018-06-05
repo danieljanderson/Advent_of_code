@@ -20,19 +20,11 @@ for (var i = 0 ; i<numberSet.length-1;i++){
   numberSet[i]=numberSet[i].map(Number)
 
 }
-//console.log(numberSet)
-//console.log("this is the type of number"+typeof numberSet)
-//console.log(numberSet)
 function getDiff(numberArray){
-//console.log(typeof numberArray)
-//console.log("this is the type of variable you have in the function getDiff function")
-//console.log(numberArray[0])
-console.log(numberArray)
   var diff = 0
   var min = numberArray[0]
   var max = numberArray[0]
   console.log(min,max)
- //console.log(numberArray[0]+1)
   for (var i=0;i<=numberArray.length-1;i++){
     if(numberArray[i]<min){
       min=numberArray[i]
@@ -41,24 +33,18 @@ console.log(numberArray)
       max=numberArray[i]
     }
   }
-  console.log("the max is"+max)
-  console.log("the min is"+min)
   diff= max - min
-  console.log(diff)
-
   return diff
 }
 function getTotal(numberArray){
-console.log("this is the type of variable you have in the function getTotal",typeof numberArray[0])
+
 var diff = 0
   var sum = 0
   for (var i = 0; i<=numberArray.length-1;i++){
    diff = getDiff(numberArray[i])
    sum=sum+diff
-   console.log(sum)
   }
  return sum
 }
-//checkSum =
-getTotal(numberSet)
+checkSum = getTotal(numberSet)
 console.log("your grand total is",checkSum)
